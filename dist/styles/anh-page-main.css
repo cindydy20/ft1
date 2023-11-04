@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+}
+
+header#header nav {
+  background: #27ae60;
+}
+@media screen and (max-width: 960px) {
+  header#header nav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+  }
+  header#header nav.is-visible {
+    display: block;
+  }
+}
+header#header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 960px) {
+  header#header nav ul {
+    flex-direction: column;
+  }
+}
+header#header nav ul li {
+  list-style: none;
+  position: relative;
+}
+header#header nav ul li a {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+header#header nav ul li ul {
+  display: none;
+}
+header#header nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background: #27ae60;
+  top: 100%;
+  left: 0;
+}
+@media screen and (max-width: 960px) {
+  header#header nav ul li:hover ul {
+    left: 100%;
+    top: 0;
+    width: 175px;
+  }
+}
+
+.js-openMenu {
+  position: fixed;
+  right: 0;
+}
+
+/*# sourceMappingURL=anh-page-main.css.map */
