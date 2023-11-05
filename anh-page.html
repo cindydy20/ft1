@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Page d'accueil</title>
-        <meta name="description"  content="page d'accueil - l'onglet de l'evaluation">
-        <link rel="stylesheet" href="dist/styles/main.css">
-    </head>
-    <body>
-        <header id="header">
+<head>
+    <meta charset="utf-8">
+    <title>Titre de ma page</title>
+    <meta name="description" content="description de ma page">
+    <link rel="stylesheet" href="dist/styles/anh-page-main.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
-        </header>
-        <button class="js-openMenu"> ouvrir menu</button>
-        <script  src="dist/scripts/main.js"></script>
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@900&family=Yantramanav:wght@300;400&display=swap"
+          rel="stylesheet">
+<body>
+<header id="header">
+    <div class="container">
+        <a href="#"><img src="dist/images/logo-studi.png" alt="logo de Studi"></a>
+        <div id="headerIcons">
+            <div class="questionSection">
+                <a href="#">
+                    <span class="material-symbols-outlined" style="margin: 10px 5px">chat_bubble</span>
+                    <p>Des questions sur votre formation ?</p>
+                </a>
+            </div>
+            <div class="avatarSection">
+                <a href="#" class="avatar"><img src="dist/images/avatar.png" alt="avatar de l'apprenant" id="avatarPhoto"></a>
+                <nav id="profileMenu" class="js-hideProfileMenu">
+                    <ul>
+                        <li>
+                            <a href="#">Menu Item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu Item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu Item 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu Item 5</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--        <button class="js-openMenu"> ouvrir menu</button>-->
+<script src="dist/scripts/main.js"></script>
+</body>
 </html>
