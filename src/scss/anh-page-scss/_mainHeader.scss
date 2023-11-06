@@ -63,12 +63,26 @@ $menuFontFamily: 'Nunito', sans-serif;
 .js-showProfileMenu {
   @extend %grayShadow;
   background-color: blue;
-  display: flex;
-  flex-direction: row-reverse;
   position: absolute;
   width: 21%;
   top: 100%;
   right: 0%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        font-family: $menuFontFamily;
+        color: white;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

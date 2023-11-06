@@ -51,12 +51,23 @@
 
 .js-showProfileMenu {
   background-color: blue;
-  display: flex;
-  flex-direction: row-reverse;
   position: absolute;
   width: 21%;
   top: 100%;
   right: 0%;
+}
+.js-showProfileMenu ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.js-showProfileMenu ul li {
+  list-style: none;
+}
+.js-showProfileMenu ul li a {
+  font-family: "Nunito", sans-serif;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
