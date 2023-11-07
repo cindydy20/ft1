@@ -1,7 +1,8 @@
 @use 'commonProperties';
 
-$headerIconHoverColor: #3c8e9a;
+$iconHoverColorTopMenu: #3c8e9a;
 $menuFontFamily: 'Nunito', sans-serif;
+$fontSizeTopMenu: 0.77775rem;
 
 .container {
   @extend %grayShadow;
@@ -22,19 +23,20 @@ $menuFontFamily: 'Nunito', sans-serif;
     width: 20%;
     margin-right: 1%;
 
-    div.questionSection {
+    div.arbreTopMenu {
       a {
+        @extend %linkCommonStyle;
         display: flex;
-        text-decoration: none;
-        color: black;
-        font-size: 12px;
+        font-size: $fontSizeTopMenu;
         font-weight: 400;
-        transition: all .2s ease-in-out;
         font-family: $menuFontFamily;
 
         &:hover {
-          color: $headerIconHoverColor;
+          color: $iconHoverColorTopMenu;
         }
+      }
+      svg {
+        margin: 12px 12px;
       }
     }
 
@@ -56,15 +58,21 @@ $menuFontFamily: 'Nunito', sans-serif;
   }
 }
 
+// Hide "Arbre de competences" on top menu for small devices
+@media screen and (max-width: 767px) {
+  .arbreTopMenu {
+    display: none;
+  }
+}
+
 .js-hideProfileMenu {
   display: none;
 }
 
 .js-showProfileMenu {
   @extend %grayShadow;
-  background-color: blue;
   position: absolute;
-  width: 21%;
+  width: 19%;
   top: 100%;
   right: 0%;
 
@@ -75,23 +83,23 @@ $menuFontFamily: 'Nunito', sans-serif;
     padding: 0;
 
     li {
-      list-style: none;
+      border: 1px solid #bdc3c7;
+      padding: 1px;
 
       a {
+        @extend %linkCommonStyle;
         font-family: $menuFontFamily;
-        color: white;
+        font-size: $fontSizeTopMenu;
+        display: flex;
+        margin-left: 10px;
+
+        span {
+          margin: 10px 18px 5px;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .questionSection {
-    display: none;
-  }
-}
 
-.js-openMenu {
-  position: fixed;
-  right: 0;
-}
+
