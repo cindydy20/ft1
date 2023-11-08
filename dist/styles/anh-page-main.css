@@ -38,6 +38,7 @@ html a {
   position: fixed;
   width: 98%;
   margin-left: -10px;
+  background: #FFF;
 }
 .container div#headerIcons {
   display: flex;
@@ -87,16 +88,7 @@ html a {
 }
 
 @media screen and (max-width: 767px) {
-  #arbreTopMenuIcon {
-    display: none;
-  }
-  #arbreTopMenuText {
-    display: none;
-  }
-  .icons-list-top-menu {
-    display: none;
-  }
-  .avatar-section {
+  #arbreTopMenuIcon, #arbreTopMenuText, .icons-list-top-menu, .avatar-section {
     display: none;
   }
 }
@@ -197,6 +189,81 @@ html a {
   position: absolute;
   right: 7%;
   top: 15%;
+}
+
+body {
+  background-color: #E9EAED;
+}
+
+.main {
+  width: calc(100% - 26.8125rem);
+  height: calc(100% - 50px);
+  position: absolute;
+  top: 14%;
+  right: 7%;
+}
+
+div.fil-ariane {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 2.3125rem;
+  padding-bottom: 10px;
+}
+div.fil-ariane a p {
+  font-family: "Nunito", sans-serif;
+}
+
+.eval-barre-recherche {
+  display: flex;
+  justify-content: space-between;
+}
+.eval-barre-recherche p:first-child {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: -0.0875rem;
+}
+
+.barre-recherche {
+  display: flex;
+  position: relative;
+}
+.barre-recherche input {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 2.375rem;
+  padding-bottom: 0%;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 3.125rem;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  width: calc(100% + 26.8125rem);
+  position: absolute;
+  right: 2%;
+  top: 40%;
+  text-align: left;
+  border: 0px;
+}
+.barre-recherche svg {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  position: absolute;
+  top: 45%;
+  right: 100%;
+}
+@media screen and (max-width: 767px) {
+  .barre-recherche .eval-barre-recherche {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=anh-page-main.css.map */

@@ -15,6 +15,7 @@ $fontSizeTopMenu: 0.77775rem;
   position: fixed;
   width: 98%;
   margin-left: -10px;
+  background: #FFF;
 
   div#headerIcons {
     display: flex;
@@ -76,19 +77,7 @@ $fontSizeTopMenu: 0.77775rem;
 
 // Hide "Mes competences" + icons list + avatar on top menu for small devices
 @media screen and (max-width: 767px) {
-  #arbreTopMenuIcon {
-    display: none;
-  }
-
-  #arbreTopMenuText {
-    display: none;
-  }
-
-  .icons-list-top-menu {
-    display: none;
-  }
-
-  .avatar-section {
+  #arbreTopMenuIcon, #arbreTopMenuText, .icons-list-top-menu, .avatar-section{
     display: none;
   }
 }

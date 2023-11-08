@@ -1,0 +1,76 @@
+@use 'commonProperties' as cp;
+
+$iconHoverColorTopMenu: #3c8e9a;
+$menuFontFamily: 'Nunito', sans-serif;
+$fontSizeTopMenu: 0.77775rem;
+$widthLeftMenuWithBorder: 26.8125rem;
+$heightTopMenu: 50px;
+$backgroundColorMain: #E9EAED;
+$primaryColorLeftMenu: #31486A;
+
+
+body {
+  background-color: $backgroundColorMain;
+}
+
+.main {
+  width: calc(100% - ($widthLeftMenuWithBorder));
+  height: calc(100% - ($heightTopMenu));
+  position: absolute;
+  top: 14%;
+  right: 7%;
+}
+
+div.fil-ariane {
+  @include cp.commonBoxPropertiesMain(2.3125rem, 10px);
+
+  a {
+
+    p {
+      font-family: $menuFontFamily;
+    }
+  }
+}
+
+.eval-barre-recherche {
+  display: flex;
+  justify-content: space-between;
+
+  p:first-child {
+    @include cp.textFont(2.5rem, normal, 600, 110.023%);
+    letter-spacing: -0.0875rem;
+  }
+}
+
+.barre-recherche {
+  display: flex;
+  position: relative;
+
+  input {
+    @include cp.commonBoxPropertiesMain(2.375rem, 0%);
+    @include cp.textFont(1.125rem, normal, 250, 3.125rem, #000);
+    width: calc(100% + ($widthLeftMenuWithBorder));
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    text-align: left;
+    border: 0px;
+  }
+
+  svg {
+    width: 1.8125rem;
+    height: 1.8125rem;
+    position: absolute;
+    top: 45%;
+    right: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .eval-barre-recherche {
+      flex-direction: row;
+    }
+  }
+}
+
+
+

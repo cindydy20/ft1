@@ -1,5 +1,7 @@
 $iconHoverColorTopMenu: #3c8e9a;
-
+$backgroundColorBox: #FFF;
+$primaryColorLeftMenu: #31486A;
+$menuFontFamily: 'Nunito', sans-serif;
 html {
   box-sizing: border-box;
 
@@ -31,4 +33,22 @@ html {
 
 .hidden {
   display: none;
+}
+
+@mixin commonBoxPropertiesMain($height: 15px, $paddingBottom: 10px) {
+  background-color: $backgroundColorBox;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: $height;
+  padding-bottom: $paddingBottom;
+}
+
+@mixin textFont($fontSize, $fontStyle: normal, $fontWeight, $lineHeight, $color: $primaryColorLeftMenu, $fontFamily: $menuFontFamily ) {
+  font-size: $fontSize;
+  font-style: $fontStyle;
+  font-weight:  $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+  font-family: $fontFamily;
 }
