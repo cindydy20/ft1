@@ -71,8 +71,8 @@ html a {
   height: 2.53844rem;
 }
 .container div#headerIcons div.avatar-section {
-  position: absolute;
-  right: -32%;
+  right: -33%;
+  position: relative;
 }
 .container div#headerIcons div.avatar-section > a {
   vertical-align: middle;
