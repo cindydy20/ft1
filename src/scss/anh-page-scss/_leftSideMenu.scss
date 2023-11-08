@@ -69,8 +69,18 @@ $onHoverColorLeftMenu: #FFB527;
         color: $primaryColorLeftMenu;
       }
 
-      svg {
+      svg:first-child {
         margin: 8px 17px 30px 30px;
+      }
+
+      p {
+        position: relative;
+      }
+
+      svg:nth-last-of-type(1) {
+        position: absolute;
+        right: 7%;
+        top: 15%;
       }
     }
   }
