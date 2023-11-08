@@ -96,6 +96,9 @@ html a {
   .icons-list-top-menu {
     display: none;
   }
+  .avatar-section {
+    display: none;
+  }
 }
 .js-hideProfileMenu {
   display: none;

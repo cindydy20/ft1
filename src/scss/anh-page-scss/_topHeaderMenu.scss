@@ -74,10 +74,10 @@ $fontSizeTopMenu: 0.77775rem;
   }
 }
 
-// Hide "Arbre de competences" on top menu for small devices
+// Hide "Mes competences" + icons list + avatar on top menu for small devices
 @media screen and (max-width: 767px) {
   #arbreTopMenuIcon {
-   display: none;
+    display: none;
   }
 
   #arbreTopMenuText {
@@ -85,6 +85,10 @@ $fontSizeTopMenu: 0.77775rem;
   }
 
   .icons-list-top-menu {
+    display: none;
+  }
+
+  .avatar-section {
     display: none;
   }
 }

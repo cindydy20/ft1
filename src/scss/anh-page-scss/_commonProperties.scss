@@ -19,6 +19,7 @@ html {
 %linkCommonStyle {
   color: #212121;
   transition: all .2s ease-in-out;
+
   &:hover {
     color: $iconHoverColorTopMenu;
   }
