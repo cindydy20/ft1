@@ -43,7 +43,6 @@ div.fil-ariane {
 }
 
 .barre-recherche {
-  display: flex;
   position: relative;
 
   input {
@@ -52,7 +51,7 @@ div.fil-ariane {
     width: calc(100% + ($widthLeftMenuWithBorder));
     position: absolute;
     right: 2%;
-    top: 40%;
+    top: 30%;
     text-align: left;
     border: 0px;
   }
@@ -61,7 +60,7 @@ div.fil-ariane {
     width: 1.8125rem;
     height: 1.8125rem;
     position: absolute;
-    top: 45%;
+    top: 35%;
     right: 100%;
   }
 
