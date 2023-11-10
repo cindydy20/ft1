@@ -1,3 +1,219 @@
-
-
 /*# sourceMappingURL=rayan-page-main.css.map */
+
+  .accueil,
+  .div {
+    top: 170px;
+    font-weight: 300;
+  }
+  .accueil {
+    position: absolute;
+    left: 145px;
+    line-height: 110%;
+    color: #337ab7;
+  }
+  .div {    
+    left: 200px;
+  }
+  .div,
+  .evaluations,
+  .pilotage-de-la {
+    position: absolute;
+    line-height: 110%;
+  }
+  .evaluations {
+    top: 170px;
+    left: 214px;
+    font-weight: 300;
+  }
+  .pilotage-de-la {
+    top: 229px;
+    left: 195px;
+    font-weight: 500;
+  }
+  .eval-container-item {
+    position: absolute;
+    top: 220px;
+    left: 131px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .eval-container-inner {
+    position: absolute;
+    top: 429px;
+    left: 0;
+    width: 3px;
+    height: 38px;
+    overflow: hidden;
+  }
+  .consulter-la-notice,
+  .notice {
+    position: absolute;
+    line-height: 110%;
+    font-weight: 500;
+  }
+  .notice {
+    top: 23px;
+    left: calc(50% - 48px);
+  }
+  .consulter-la-notice {
+    top: 5px;
+    left: 40px;
+  }
+  .consulter-la-notice-wrapper {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    width: 219px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .frame-child {
+    position: absolute;
+    top: 71px;
+    left: 99px;
+    width: 76px;
+    height: 76px;
+  }
+  .veuillez-consulter-la {
+    position: absolute;
+    top: 212px;
+    left: calc(50% - 94px);
+    line-height: 110%;
+    font-weight: 500;
+    display: inline-block;
+    width: 188px;
+  }
+  .notice-parent {
+    position: absolute;
+    top: 315px;
+    left: 132px;
+    box-sizing: border-box;
+    width: 276px;
+    height: 293px;
+    overflow: hidden;
+  }
+  .soumettre-mon-valuation {
+    position: absolute;
+    top: 17px;
+    left: calc(50% - 145.5px);
+    line-height: 110%;
+    font-weight: 500;
+  }
+  .soumettre-mon-valuation-wrapper {
+    position: absolute;
+    top: 677px;
+    left: 278px;
+    border-radius: 2%;
+    background-color: #ffb527;
+    width: 765px;
+    height: 67px;
+    overflow: hidden;
+  }
+  .enonc,
+  .tlcharger-lnonc {
+    position: absolute;
+    line-height: 110.02%;
+    font-weight: 500;
+  }
+  .enonc {
+    top: 23px;
+    left: calc(50% - 52px);
+  }
+  .tlcharger-lnonc {
+    top: 4px;
+    left: calc(50% - 79.5px);
+  }
+  .download-icon {
+    position: absolute;
+    top: 6px;
+    left: 192px;
+    width: 18px;
+    height: 18px;
+  }
+  .tlcharger-lnonc-parent {
+    position: absolute;
+    top: 190px;
+    left: calc(50% - 110px);
+    width: 219px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .copie-rendre {
+    position: absolute;
+    top: 4px;
+    left: calc(50% - 54.5px);
+    line-height: 110.02%;
+    font-weight: 500;
+  }
+  .copie-rendre-parent {
+    position: absolute;
+    top: 227px;
+    left: calc(50% - 110px);
+    width: 219px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .doc-search-two-icon {
+    position: absolute;
+    top: 69px;
+    left: calc(50% - 38px);
+    width: 78px;
+    height: 78px;
+  }
+  .enonc-parent {
+    position: absolute;
+    top: 315px;
+    left: 529px;
+    box-sizing: border-box;
+    width: 276px;
+    height: 293px;
+    overflow: hidden;
+  }
+  .envoyer-lvaluation {
+    position: absolute;
+    top: 23px;
+    left: calc(50% - 114px);
+    line-height: 110.02%;
+    font-weight: 500;
+  }
+  .send-email-icon {
+    position: absolute;
+    top: 70px;
+    left: 109px;
+    width: 66px;
+    height: 66px;
+  }
+  .transfert-de-fichiers {
+    position: absolute;
+    top: 4px;
+    left: 34px;
+    line-height: 110.02%;
+    font-weight: 500;
+  }
+  .envoyer-lvaluation-parent,
+  .transfert-de-fichiers-wrapper {
+    position: absolute;
+    overflow: hidden;
+  }
+  .transfert-de-fichiers-wrapper {
+    top: 156px;
+    left: calc(50% - 109px);
+    width: 219px;
+    height: 30px;
+  }
+  .envoyer-lvaluation-parent {
+    top: 315px;
+    left: 926px;
+    box-sizing: border-box;
+    width: 276px;
+    height: 293px;
+  }
+  .eval-container {
+    position: relative;
+    width: 100%;
+    height: 832px;
+    overflow: hidden;
+    text-align: left;
+  }
