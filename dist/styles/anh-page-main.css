@@ -99,8 +99,9 @@ html a {
 .js-showProfileMenu {
   position: absolute;
   width: 230px;
-  top: 118%;
+  top: 110%;
   right: -122%;
+  background-color: white;
 }
 .js-showProfileMenu ul {
   display: flex;
@@ -262,6 +263,80 @@ div.fil-ariane a p {
   .barre-recherche .eval-barre-recherche {
     flex-direction: row;
   }
+}
+
+.formation {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 4.25rem;
+  padding-bottom: 0%;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.formation a.title-formation {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #212121;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  margin-right: 7rem;
+}
+.formation div.icon-test {
+  display: flex;
+  background-color: #31486A;
+  position: relative;
+  align-items: center;
+  height: 1.9166666667rem;
+  margin-top: 0.2166666667rem;
+  margin-right: 2rem;
+  width: 3rem;
+}
+.formation div.icon-test p {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #FFF;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  position: absolute;
+  left: 14%;
+  bottom: -50%;
+}
+.formation div.icon-test svg {
+  position: absolute;
+  right: 10%;
+}
+.formation .number-competences {
+  margin-left: 5rem;
+  position: relative;
+}
+.formation .number-competences .count-competence {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  position: absolute;
+  top: -35px;
+  right: -55px;
+}
+.formation .number-competences .competences {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: Campton;
+  letter-spacing: -0.02625rem;
+  position: absolute;
+  top: 41%;
 }
 
 /*# sourceMappingURL=anh-page-main.css.map */

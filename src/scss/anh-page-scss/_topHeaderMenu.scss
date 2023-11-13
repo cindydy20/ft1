@@ -90,8 +90,9 @@ $fontSizeTopMenu: 0.77775rem;
   @extend %grayShadow;
   position: absolute;
   width: 230px;
-  top: 118%;
+  top: 110%;
   right: -122%;
+  background-color: white;
 
   ul {
     display: flex;

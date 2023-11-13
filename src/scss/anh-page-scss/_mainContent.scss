@@ -7,7 +7,11 @@ $widthLeftMenuWithBorder: 26.8125rem;
 $heightTopMenu: 50px;
 $backgroundColorMain: #E9EAED;
 $primaryColorLeftMenu: #31486A;
-
+$titleFormationTextColor: #212121;
+$heightFormation: 4.25rem;
+$marginBottomFormation: 1.5rem;
+$marginRightFormationTitle: 7rem;
+$marginLeftNumberCompetences: 5rem;
 
 body {
   background-color: $backgroundColorMain;
@@ -70,5 +74,58 @@ div.fil-ariane {
   }
 }
 
+.formation {
+  @include cp.commonBoxPropertiesMain($heightFormation, 0%);
+  align-items: center;
+  margin-bottom: $marginBottomFormation;
 
+  a.title-formation {
+    @include cp.textFont(1.125rem, normal, 500, 110.023%, $titleFormationTextColor, Campton);
+    letter-spacing: -0.03938rem;
+    margin-right: $marginRightFormationTitle;
+  }
+
+  div.icon-test {
+    display: flex;
+    background-color: $primaryColorLeftMenu;
+    position: relative;
+    align-items: center;
+    height: calc($heightFormation / 3 + 0.5rem);
+    margin-top: calc(($heightFormation / 3) - 1.2rem);
+    margin-right: 2rem;
+    width: 3rem;
+
+    p {
+      @include cp.textFont(1.125rem, normal, 500, 110.023%, #FFF, Campton);
+      letter-spacing: -0.03938rem;
+      position: absolute;
+      left: 14%;
+      bottom: -50%;
+    }
+
+    svg {
+      position: absolute;
+      right: 10%;
+    }
+  }
+
+  .number-competences {
+    margin-left: $marginLeftNumberCompetences;
+    position: relative;
+    .count-competence {
+      @include cp.textFont(1.125rem, normal, 500, 110.023%, $primaryColorLeftMenu, Campton);
+      letter-spacing: -0.03938rem;
+      position: absolute;
+      top: -35px;
+      right: -55px;
+    }
+
+    .competences {
+      @include cp.textFont(0.75rem, normal, 300, 110.023%, $primaryColorLeftMenu, Campton);
+      letter-spacing: -0.02625rem;
+      position: absolute;
+      top: 41%;
+    }
+  }
+}
 

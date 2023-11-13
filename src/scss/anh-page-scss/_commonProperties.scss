@@ -47,8 +47,9 @@ html {
 @mixin textFont($fontSize, $fontStyle: normal, $fontWeight, $lineHeight, $color: $primaryColorLeftMenu, $fontFamily: $menuFontFamily ) {
   font-size: $fontSize;
   font-style: $fontStyle;
-  font-weight:  $fontWeight;
+  font-weight: $fontWeight;
   line-height: $lineHeight;
   color: $color;
   font-family: $fontFamily;
 }
+
