@@ -36,8 +36,9 @@ html a {
   align-items: center;
   top: 0;
   position: fixed;
-  width: 98%;
+  width: 99%;
   margin-left: -10px;
+  background: #FFF;
 }
 .container div#headerIcons {
   display: flex;
@@ -64,14 +65,14 @@ html a {
 }
 .container div#headerIcons div.icons-list-top-menu {
   position: absolute;
-  right: -25%;
+  right: -22%;
 }
 .container div#headerIcons div.icons-list-top-menu img {
   width: 11rem;
   height: 2.53844rem;
 }
 .container div#headerIcons div.avatar-section {
-  right: -33%;
+  right: -30%;
   position: relative;
 }
 .container div#headerIcons div.avatar-section > a {
@@ -86,20 +87,6 @@ html a {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 767px) {
-  #arbreTopMenuIcon {
-    display: none;
-  }
-  #arbreTopMenuText {
-    display: none;
-  }
-  .icons-list-top-menu {
-    display: none;
-  }
-  .avatar-section {
-    display: none;
-  }
-}
 .js-hideProfileMenu {
   display: none;
 }
@@ -107,8 +94,9 @@ html a {
 .js-showProfileMenu {
   position: absolute;
   width: 230px;
-  top: 118%;
-  right: -122%;
+  top: 110%;
+  right: -55%;
+  background-color: white;
 }
 .js-showProfileMenu ul {
   display: flex;
@@ -197,6 +185,171 @@ html a {
   position: absolute;
   right: 7%;
   top: 15%;
+}
+
+body {
+  background-color: #E9EAED;
+}
+
+.main {
+  width: calc(100% - 26.8125rem);
+  height: calc(100% - 50px);
+  position: absolute;
+  top: 14%;
+  right: 7%;
+}
+
+div.fil-ariane {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 2.3125rem;
+  padding-bottom: 10px;
+}
+div.fil-ariane a p {
+  font-family: "Nunito", sans-serif;
+}
+
+.eval-barre-recherche {
+  display: flex;
+  position: relative;
+}
+.eval-barre-recherche p:first-child {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: -0.0875rem;
+}
+
+.barre-recherche input {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 2.375rem;
+  padding-bottom: 0%;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 3.125rem;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  width: 30rem;
+  position: absolute;
+  right: 0%;
+  top: 37%;
+  text-align: left;
+  border: 0px;
+}
+.barre-recherche svg {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  position: absolute;
+  top: 42%;
+  right: 0%;
+}
+@media screen and (max-width: 767px) {
+  .barre-recherche .eval-barre-recherche {
+    flex-direction: row;
+  }
+}
+
+.formation {
+  background-color: #FFF;
+  border-radius: 0.3125rem;
+  display: flex;
+  padding-left: 15px;
+  height: 4.25rem;
+  padding-bottom: 0%;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.formation a.title-formation {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #212121;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  width: calc((100% - 26.8125rem) / 1.25);
+}
+.formation div.icon-test {
+  display: flex;
+  background-color: #31486A;
+  position: relative;
+  align-items: center;
+  height: 1.9166666667rem;
+  margin-top: 0.2166666667rem;
+  margin-right: 2rem;
+  width: 3rem;
+}
+.formation div.icon-test p {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #FFF;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  position: absolute;
+  left: 14%;
+  bottom: -50%;
+}
+.formation div.icon-test svg {
+  position: absolute;
+  right: 10%;
+}
+.formation .number-competences {
+  margin-left: 5rem;
+  position: relative;
+}
+.formation .number-competences .count-competence {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: Campton;
+  letter-spacing: -0.03938rem;
+  position: absolute;
+  top: -35px;
+  right: -55px;
+}
+.formation .number-competences .competences {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110.023%;
+  color: #31486A;
+  font-family: Campton;
+  letter-spacing: -0.02625rem;
+  position: absolute;
+  top: 41%;
+}
+
+@media screen and (min-width: 370px) and (max-width: 1280px) {
+  .number-competences {
+    margin-left: 0rem !important;
+  }
+  a.title-formation {
+    width: calc((100% - 26.8125rem) / 0.8) !important;
+  }
+  .eval-barre-recherche {
+    margin-bottom: 15%;
+  }
+  .barre-recherche input {
+    right: 14% !important;
+    top: 95% !important;
+  }
+  .barre-recherche svg {
+    top: 99% !important;
+    right: 15% !important;
+  }
 }
 
 /*# sourceMappingURL=anh-page-main.css.map */
