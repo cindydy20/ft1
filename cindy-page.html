@@ -206,6 +206,45 @@
 <!--CONTENU PRINCIPAL COMMENCE D'ICI test-->
 
 <main>
+    <div class="bigBlock">
+        <div class="photos-container">
+            <div class="photo">
+                <h2>Arbre de compétences</h2>
+                <div style="border: 1px solid #ddd;"></div>
+                <img class="arbre" src="dist/images/arbre.png" alt="arbre de compétences">
+                <button>Consulter l'arbre</button>
+            </div>
+            <div class="photo ressources">
+                <h2>Ressources</h2>
+                <div style="border: 1px solid #ddd;"></div>
+                <h3>Guide des épreuves du bloc Pilotage...</h3>
+                <h3>Méthodologie pour réaliser sa vidéo</h3>
+                <p><a href="#">Méthodologie pour réaliser sa vidéo</a></p>
+                
+            </div>
+        </div>
+        <div class="blocks-container">
+            <div class="clickable-block" data-target="block1">
+                <div class="clickable-content">
+                    <h3>Pilotage de la paie et des déclarations sociales </h3>
+                    <div class="timeline">
+                        <div class="point" data-number="1"></div>
+                        <div class="point" data-number="2"></div>
+                        <div class="point" data-number="3"></div>
+                    </div>
+                </div>
+                <div class="expandable-menu" id="block1-menu">
+                    <div class="evaluation-links">
+                        <div><a href="#">Evaluation d’entrainement 1 - bloc Pilotage de la paie et des déclarations sociales</a></div>
+                        <div><a href="#">Evaluation d’entrainement 2 - bloc Pilotage de la paie et des déclarations sociales</a></div>
+                        <a href="#">Evaluation d’entrainement 3 - bloc Pilotage de la paie et des déclarations sociales</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Répéter pour chaque bloc -->
+        </div>
+    </div>
 
 </main>
 <script src="dist/scripts/anh-page-main.js"></script>
