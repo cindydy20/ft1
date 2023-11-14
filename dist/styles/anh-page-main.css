@@ -36,7 +36,7 @@ html a {
   align-items: center;
   top: 0;
   position: fixed;
-  width: 98%;
+  width: 99%;
   margin-left: -10px;
   background: #FFF;
 }
@@ -65,14 +65,14 @@ html a {
 }
 .container div#headerIcons div.icons-list-top-menu {
   position: absolute;
-  right: -25%;
+  right: -22%;
 }
 .container div#headerIcons div.icons-list-top-menu img {
   width: 11rem;
   height: 2.53844rem;
 }
 .container div#headerIcons div.avatar-section {
-  right: -33%;
+  right: -30%;
   position: relative;
 }
 .container div#headerIcons div.avatar-section > a {
@@ -87,11 +87,6 @@ html a {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 767px) {
-  #arbreTopMenuIcon, #arbreTopMenuText, .icons-list-top-menu, .avatar-section {
-    display: none;
-  }
-}
 .js-hideProfileMenu {
   display: none;
 }
@@ -100,7 +95,7 @@ html a {
   position: absolute;
   width: 230px;
   top: 110%;
-  right: -122%;
+  right: -55%;
   background-color: white;
 }
 .js-showProfileMenu ul {
@@ -218,6 +213,7 @@ div.fil-ariane a p {
 
 .eval-barre-recherche {
   display: flex;
+  position: relative;
 }
 .eval-barre-recherche p:first-child {
   font-size: 2.5rem;
@@ -229,9 +225,6 @@ div.fil-ariane a p {
   letter-spacing: -0.0875rem;
 }
 
-.barre-recherche {
-  position: relative;
-}
 .barre-recherche input {
   background-color: #FFF;
   border-radius: 0.3125rem;
@@ -245,9 +238,9 @@ div.fil-ariane a p {
   line-height: 3.125rem;
   color: #000;
   font-family: "Nunito", sans-serif;
-  width: calc(100% + 26.8125rem);
+  width: 30rem;
   position: absolute;
-  right: -822px;
+  right: 0%;
   top: 37%;
   text-align: left;
   border: 0px;
@@ -257,7 +250,7 @@ div.fil-ariane a p {
   height: 1.8125rem;
   position: absolute;
   top: 42%;
-  right: -804px;
+  right: 0%;
 }
 @media screen and (max-width: 767px) {
   .barre-recherche .eval-barre-recherche {
@@ -337,6 +330,26 @@ div.fil-ariane a p {
   letter-spacing: -0.02625rem;
   position: absolute;
   top: 41%;
+}
+
+@media screen and (min-width: 370px) and (max-width: 1280px) {
+  .number-competences {
+    margin-left: 0rem !important;
+  }
+  a.title-formation {
+    width: calc((100% - 26.8125rem) / 0.8) !important;
+  }
+  .eval-barre-recherche {
+    margin-bottom: 15%;
+  }
+  .barre-recherche input {
+    right: 14% !important;
+    top: 95% !important;
+  }
+  .barre-recherche svg {
+    top: 99% !important;
+    right: 15% !important;
+  }
 }
 
 /*# sourceMappingURL=anh-page-main.css.map */

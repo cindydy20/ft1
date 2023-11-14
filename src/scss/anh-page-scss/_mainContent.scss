@@ -10,7 +10,10 @@ $primaryColorLeftMenu: #31486A;
 $titleFormationTextColor: #212121;
 $heightFormation: 4.25rem;
 $marginBottomFormation: 1.5rem;
-$marginLeftNumberCompetences: 5rem;
+$marginLeftNumberCompetencesFullScreen: 5rem;
+$marginLeftNumberCompetencesSmallDeviceWidth: 0rem;
+$inputBoxWidthFullScreen: 30rem;
+$smallDeviceWidth: 370px;
 
 body {
   background-color: $backgroundColorMain;
@@ -37,6 +40,7 @@ div.fil-ariane {
 
 .eval-barre-recherche {
   display: flex;
+  position: relative;
 
   p:first-child {
     @include cp.textFont(2.5rem, normal, 600, 110.023%);
@@ -45,14 +49,13 @@ div.fil-ariane {
 }
 
 .barre-recherche {
-  position: relative;
 
   input {
     @include cp.commonBoxPropertiesMain(2.375rem, 0%);
     @include cp.textFont(1.125rem, normal, 250, 3.125rem, #000);
-    width: calc(100% + ($widthLeftMenuWithBorder));
+    width: $inputBoxWidthFullScreen;
     position: absolute;
-    right: -822px;
+    right: 0%;
     top: 37%;
     text-align: left;
     border: 0px;
@@ -63,7 +66,7 @@ div.fil-ariane {
     height: 1.8125rem;
     position: absolute;
     top: 42%;
-    right: -804px;
+    right: 0%;
   }
 
   @media screen and (max-width: 767px) {
@@ -110,8 +113,9 @@ div.fil-ariane {
   }
 
   .number-competences {
-    margin-left: $marginLeftNumberCompetences;
+    margin-left: $marginLeftNumberCompetencesFullScreen;
     position: relative;
+
     .count-competence {
       @include cp.textFont(1.125rem, normal, 500, 110.023%, $primaryColorLeftMenu, Campton);
       letter-spacing: -0.03938rem;
@@ -129,3 +133,30 @@ div.fil-ariane {
   }
 }
 
+@media screen and (min-width: $smallDeviceWidth) and (max-width: 1280px) {
+  .number-competences {
+    margin-left: $marginLeftNumberCompetencesSmallDeviceWidth !important;
+  }
+
+  a.title-formation {
+    width: calc((100% - ($widthLeftMenuWithBorder)) / 0.8) !important;
+  }
+
+  .eval-barre-recherche {
+    margin-bottom: 15%;
+  }
+
+  .barre-recherche {
+
+    input {
+      right: 14% !important;
+      top: 95% !important;
+    }
+
+    svg {
+      top: 99% !important;
+      right: 15% !important;
+    }
+  }
+
+}
