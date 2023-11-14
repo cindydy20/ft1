@@ -4,6 +4,7 @@ $iconHoverColorTopMenu: #3c8e9a;
 $menuFontFamily: 'Nunito', sans-serif;
 $fontSizeTopMenu: 0.77775rem;
 
+//TODO: maxwidth 375px add margin left of number competences variables, set to 0 rem. width of formation title /0.5
 .container {
   @extend %grayShadow;
   display: flex;

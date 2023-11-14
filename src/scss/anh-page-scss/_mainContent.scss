@@ -10,7 +10,6 @@ $primaryColorLeftMenu: #31486A;
 $titleFormationTextColor: #212121;
 $heightFormation: 4.25rem;
 $marginBottomFormation: 1.5rem;
-$marginRightFormationTitle: 7rem;
 $marginLeftNumberCompetences: 5rem;
 
 body {
@@ -82,8 +81,9 @@ div.fil-ariane {
   a.title-formation {
     @include cp.textFont(1.125rem, normal, 500, 110.023%, $titleFormationTextColor, Campton);
     letter-spacing: -0.03938rem;
-    margin-right: $marginRightFormationTitle;
+    width: calc((100% - ($widthLeftMenuWithBorder)) / 1.25);
   }
+
 
   div.icon-test {
     display: flex;

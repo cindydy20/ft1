@@ -283,7 +283,7 @@ div.fil-ariane a p {
   color: #212121;
   font-family: Campton;
   letter-spacing: -0.03938rem;
-  margin-right: 7rem;
+  width: calc((100% - 26.8125rem) / 1.25);
 }
 .formation div.icon-test {
   display: flex;
