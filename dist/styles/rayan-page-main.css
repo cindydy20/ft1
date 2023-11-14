@@ -96,15 +96,15 @@
   }
   .soumettre-mon-valuation {
     position: absolute;
-    top: 17px;
-    left: calc(50% - 145.5px);
+    top: 23px;
+    left: 280px;
     line-height: 110%;
     font-weight: 500;
   }
   .soumettre-mon-valuation-wrapper {
     position: absolute;
-    top: 677px;
-    left: 278px;
+    top: 750px;
+    left: 650px;
     border-radius: 2%;
     background-color: #ffb527;
     width: 765px;
