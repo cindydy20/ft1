@@ -16,13 +16,19 @@ h3 {
 .bigBlock {
     display: flex;
     background: #E9EAED;
-    padding: 50px;
+    padding: 70px 50px 50px 50px;
+}
+
+.titlePrimary{
+    position: absolute;
+    width: 80%;
+    font-size: 30px;
 }
 
 .photos-container {
     width: 260px;
     margin-right: 29px;
-    margin-left: 80px; 
+    margin-left: 80px;
 
 
     .photo {
@@ -47,9 +53,10 @@ h3 {
 
 .clickable-content {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     text-align: left;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .expandable-menu {
@@ -71,7 +78,7 @@ h3 {
         position: relative;
         width: 20px;
         height: 20px;
-        background-color: #333;
+        background-color: #cecece;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -96,7 +103,7 @@ h3 {
 }
 
 .ressOne , .ressTwo , .ressThree{
-    padding: 15px 0px 15px 15px;
+    padding: 10px 0px 10px 15px;
 }
 
 .icon{
@@ -160,19 +167,21 @@ h3 {
     align-items: center;
     margin-bottom: 10px;
     background-color: white;
+    border-top: #ddd solid 1px;
+    padding-top: 10px;
 }
 
 .blocks-container .point {
     position: relative;
     width: 20px;
     height: 20px;
-    background-color: #E9EAED;
+    background-color: #cecece;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .blocks-container .point::before {
@@ -184,4 +193,67 @@ h3 {
     margin-bottom: 5px;
     color: #333;
     background-color: white;
+}
+
+.filters {
+    display: flex;
+    gap: 20px; 
+    border-bottom: #ffffff 2px solid;
+}
+
+.filter {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
+    color: black; 
+}
+
+.filter.active {
+    font-weight: bold;
+    border-bottom: 3px solid;
+    color: inherit; 
+}
+
+.filter[data-status="all"].active{
+    color: black;
+}
+
+.filter[data-status="todo"].active{
+    color: #FFA31B;
+}
+
+.filter[data-status="in-progress"].active{
+    color: #E56262;
+}
+
+.filter[data-status="pending"].active{
+    color: #50C9C3;
+}
+.filter[data-status="done"].active {
+    color: #8BC34A; 
+}
+
+.filter[data-status="all"] {
+    color: black; 
+}
+
+.filter[data-status="todo"] {
+    color: black; 
+}
+
+.filter[data-status="in-progress"] {
+    color: black; 
+}
+
+.filter[data-status="pending"] {
+    color: black; 
+}
+
+.filter[data-status="done"] {
+    color: black; 
+}
+
+.content {
+    padding: 20px;
 }
