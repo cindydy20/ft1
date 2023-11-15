@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Campton", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -103,18 +103,31 @@ h2 h3 {
   background-color: white;
 }
 
+.ressOne, .ressTwo, .ressThree {
+  padding: 15px 0px 15px 15px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.links {
+  margin: 4px 0 0 0;
+}
+
 .photos-container .photo {
   margin-bottom: 29px;
 }
 
-.photos-container .photo img {
+.arbre {
   width: 231px;
   cursor: pointer;
   margin-top: 15px;
 }
 
-.photos-container .photo img,
-.photos-container .photo button {
+.arbre, .photos-container .photo button {
   margin: 15px 0px 0px 5px;
   padding: 9px;
   display: block;
