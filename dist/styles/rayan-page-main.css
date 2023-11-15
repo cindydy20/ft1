@@ -88,7 +88,7 @@
   .notice-parent {
     position: absolute;
     top: 315px;
-    left: 132px;
+    left: 320px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
@@ -104,7 +104,7 @@
   .soumettre-mon-valuation-wrapper {
     position: absolute;
     top: 750px;
-    left: 650px;
+    left: 590px;
     border-radius: 2%;
     background-color: #ffb527;
     width: 765px;
@@ -165,7 +165,7 @@
   .enonc-parent {
     position: absolute;
     top: 315px;
-    left: 529px;
+    left: 810px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
@@ -205,7 +205,7 @@
   }
   .envoyer-lvaluation-parent {
     top: 315px;
-    left: 926px;
+    left: 1300px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
