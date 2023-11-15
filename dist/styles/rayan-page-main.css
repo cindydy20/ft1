@@ -4,6 +4,11 @@
   .div {
     top: 170px;
     font-weight: 300;
+    width: 1068px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
   }
   .accueil {
     position: absolute;
@@ -58,8 +63,21 @@
     left: calc(50% - 48px);
   }
   .consulter-la-notice {
-    top: 5px;
-    left: 40px;
+    top: 0px; 
+    left: 10px;
+    display: inline-flex;
+    padding: 6px 42px 6px 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #31486A;
+    color: var(--color-white, #FFF);
+    font-family: CamptonMedium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 17.604px */
+    letter-spacing: -0.56px;
   }
   .consulter-la-notice-wrapper {
     position: absolute;
@@ -93,19 +111,29 @@
     width: 276px;
     height: 293px;
     overflow: hidden;
+    width: 276px;
+    height: 293px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #31486A;
+    background: #FFF;
   }
   .soumettre-mon-valuation {
     position: absolute;
-    top: 23px;
-    left: 280px;
+    top: 15px;
+    left: 230px;
     line-height: 110%;
     font-weight: 500;
+    color: var(--color-white, #FFF);
+    font-family: Campton;
+    font-size: 30px;
+    font-style: normal; 
   }
   .soumettre-mon-valuation-wrapper {
     position: absolute;
     top: 750px;
     left: 590px;
-    border-radius: 2%;
+    border-radius: 5px;
     background-color: #ffb527;
     width: 765px;
     height: 67px;
@@ -142,10 +170,18 @@
   }
   .copie-rendre {
     position: absolute;
-    top: 4px;
-    left: calc(50% - 54.5px);
+    top: 0px;
+    left: 70px;
     line-height: 110.02%;
     font-weight: 500;
+    display: inline-flex;
+    padding: 6px 9px 6px 56px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #31486A;
   }
   .copie-rendre-parent {
     position: absolute;
@@ -170,6 +206,12 @@
     width: 276px;
     height: 293px;
     overflow: hidden;
+    width: 276px;
+    height: 293px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #31486A;
+    background: #FFF;
   }
   .envoyer-lvaluation {
     position: absolute;
@@ -209,6 +251,12 @@
     box-sizing: border-box;
     width: 276px;
     height: 293px;
+    width: 276px;
+    height: 293px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #31486A;
+    background: #FFF;
   }
   .eval-container {
     position: relative;
@@ -217,3 +265,4 @@
     overflow: hidden;
     text-align: left;
   }
+  
