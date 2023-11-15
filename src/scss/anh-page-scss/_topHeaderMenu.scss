@@ -22,6 +22,7 @@ $fontSizeTopMenu: 0.77775rem;
     justify-content: flex-end;
     width: 70%;
     position: relative;
+    margin-left: 15%;
 
     div.arbre-top-menu {
       display: flex;
@@ -46,8 +47,8 @@ $fontSizeTopMenu: 0.77775rem;
     }
 
     div.icons-list-top-menu {
-      position: absolute;
-      right: -22%;
+      margin-right: 5%;
+      margin-left: 5%;
 
       img {
         width: 11rem;
@@ -56,14 +57,12 @@ $fontSizeTopMenu: 0.77775rem;
     }
 
     div.avatar-section {
-      right: -30%;
-      position: relative;
 
       > a {
         vertical-align: middle;
         height: 40px;
         border-radius: 50%;
-        top: 5px;
+        right: 1%;
 
         img {
           vertical-align: middle;
@@ -75,16 +74,17 @@ $fontSizeTopMenu: 0.77775rem;
   }
 }
 
-.js-hideProfileMenu {
+.profile-menu {
   display: none;
 }
 
-.js-showProfileMenu {
+.profile-menu.show {
   @extend %grayShadow;
-  position: absolute;
+  display: block;
+  position: fixed;
   width: 230px;
-  top: 110%;
-  right: -55%;
+  top: 50px;
+  right: 0%;
   background-color: white;
 
   ul {

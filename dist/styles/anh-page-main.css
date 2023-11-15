@@ -8,15 +8,15 @@ html a {
   text-decoration: none;
 }
 
-.container, .js-showProfileMenu {
+.container, .profile-menu.show {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1411764706), 0 1px 18px rgba(0, 0, 0, 0.1215686275);
 }
 
-.container div#headerIcons div.arbre-top-menu a, .js-showProfileMenu ul li a {
+.container div#headerIcons div.arbre-top-menu a, .profile-menu.show ul li a {
   color: #212121;
   transition: all 0.2s ease-in-out;
 }
-.container div#headerIcons div.arbre-top-menu a:hover, .js-showProfileMenu ul li a:hover {
+.container div#headerIcons div.arbre-top-menu a:hover, .profile-menu.show ul li a:hover {
   color: #3c8e9a;
 }
 
@@ -45,6 +45,7 @@ html a {
   justify-content: flex-end;
   width: 70%;
   position: relative;
+  margin-left: 15%;
 }
 .container div#headerIcons div.arbre-top-menu {
   display: flex;
@@ -64,22 +65,18 @@ html a {
   margin-left: -25px;
 }
 .container div#headerIcons div.icons-list-top-menu {
-  position: absolute;
-  right: -22%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .container div#headerIcons div.icons-list-top-menu img {
   width: 11rem;
   height: 2.53844rem;
 }
-.container div#headerIcons div.avatar-section {
-  right: -30%;
-  position: relative;
-}
 .container div#headerIcons div.avatar-section > a {
   vertical-align: middle;
   height: 40px;
   border-radius: 50%;
-  top: 5px;
+  right: 1%;
 }
 .container div#headerIcons div.avatar-section > a img {
   vertical-align: middle;
@@ -87,34 +84,35 @@ html a {
   border-radius: 50%;
 }
 
-.js-hideProfileMenu {
+.profile-menu {
   display: none;
 }
 
-.js-showProfileMenu {
-  position: absolute;
+.profile-menu.show {
+  display: block;
+  position: fixed;
   width: 230px;
-  top: 110%;
-  right: -55%;
+  top: 50px;
+  right: 0%;
   background-color: white;
 }
-.js-showProfileMenu ul {
+.profile-menu.show ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
-.js-showProfileMenu ul li {
+.profile-menu.show ul li {
   border: 1px solid #bdc3c7;
   padding: 1px;
 }
-.js-showProfileMenu ul li a {
+.profile-menu.show ul li a {
   font-family: "Nunito", sans-serif;
   font-size: 0.77775rem;
   display: flex;
   margin-left: 10px;
 }
-.js-showProfileMenu ul li a span {
+.profile-menu.show ul li a span {
   margin: 10px 18px 5px;
 }
 

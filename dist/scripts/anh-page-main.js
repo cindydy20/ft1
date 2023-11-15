@@ -3,13 +3,7 @@
 let avatar = document.querySelector('.avatar');
 let profileMenu = document.querySelector('#profileMenu')
 avatar.addEventListener('click', function () {
-    if (profileMenu.classList.contains('js-hideProfileMenu')) {
-        profileMenu.classList.remove('js-hideProfileMenu');
-        profileMenu.classList.add('js-showProfileMenu');
-    } else {
-        profileMenu.classList.remove('js-showProfileMenu');
-        profileMenu.classList.add('js-hideProfileMenu');
-    }
+    profileMenu.classList.toggle('show')
 })
 
 // Left menu: click toggle button -> open/hide left menu && show only icons (not text) on the partially displayed menu bar
@@ -18,7 +12,6 @@ const leftMenu = document.getElementById('leftMenu');
 const outterIconsLeftMenu = document.getElementsByClassName("outer-icon");
 toggleButton.addEventListener('click', () => {
     leftMenu.classList.toggle('open');
-    console.log('open');
     if (toggleButton.innerHTML = leftMenu.classList.contains('open')) {
         toggleButton.innerHTML = '&#8249;';
         changeVisibilityOuterIconsLeftMenu(true, outterIconsLeftMenu);
