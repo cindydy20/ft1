@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Titre de ma page</title>
+    <title>Pilotage de la paie</title>
     <meta name="description" content="description de ma page">
 <!--    anh-page-main stylesheet for common menus (top+left)-->
     <link rel="stylesheet" href="dist/styles/anh-page-main.css">
@@ -205,10 +205,14 @@
 
 <main>
     <div class="bigBlock">
-        <div class="photos-container">
+        <section class="TitreModule">
+            <img class="iconModule" src="dist/images/iconModule.png">
             <h1 class="titlePrimary">
-                Pilotage de la paie et des déclarations sociales
+            Pilotage de la paie et des déclarations sociales
             </h1>
+        </section>
+            <div class="blocksContent">
+                <div class="photos-container">
                 <div class="photo">
                     <h2>Arbre de compétences</h2>
                     <div style="border: 1px solid #ddd;"></div>
@@ -217,50 +221,50 @@
                 </div>
                 <div class="photo ressources">
                     <h2>Ressources</h2>
-                    <div style="border: 1px solid #ddd;"></div>
+                    <div style="border: 1px solid #ddd;">
+                    </div>
                     <div class="ressOne">
                         <img class="icon" src="dist/images/liens.png">
                         <h7>Guide épreuves du bloc</h7>
                         <p class="links"><a href="#">https://g%83epreuves.fr</a></p>
                     </div>
-                    <div class="ressTwo">
-                        <img class="icon" src="dist/images/liens.png">
-                        <h7>Méthodologie pour vidéo</h7>
-                        <p class="links"><a href="#">https://metho%$zjhrlogie.fr</a></p>
-                    </div>
+                        <div class="ressTwo">
+                            <img class="icon" src="dist/images/liens.png">
+                            <h7>Méthodologie pour vidéo</h7>
+                            <p class="links"><a href="#">https://metho%$zjhrlogie.fr</a></p>
+                        </div>
                     <div class="ressThree">
                         <img class="icon" src="dist/images/liens.png">
                         <h7>Méthodologie pour écrire</h7>
                         <p class="links"><a href="#">https://redact£apion.fr</a></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="blocks-container">
+                    <div class="filters">
+                    <div class="filter" data-status="all">Tout</div>
+                    <div class="filter" data-status="todo">À faire</div>
+                    <div class="filter" data-status="in-progress">En cours</div>
+                    <div class="filter" data-status="pending">En attente</div>
+                    <div class="filter" data-status="done">Corrigée(s)</div>
+                </div>
+                <div class="clickable-block" data-target="block1">
+                    <div class="clickable-content">
+                        <h3> -  Evaluations d’entrainement </h3>
+                        <div class="timeline">
+                            <div class="point" data-number="1"></div>
+                            <div class="point" data-number="2"></div>
+                            <div class="point" data-number="3"></div>
+                        </div>
+                    </div>
+                    <div class="expandable-menu" id="block1-menu">
+                        <div class="evaluation-links">
+                            <div><a href="rayan-page.html">Evaluation d’entrainement 1 - bloc Pilotage de la paie et des déclarations sociales</a></div>
+                            <div><a href="#">Evaluation d’entrainement 2 - bloc Pilotage de la paie et des déclarations sociales</a></div>
+                            <a href="#">Evaluation d’entrainement 3 - bloc Pilotage de la paie et des déclarations sociales</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <div class="blocks-container">
-            
-            <div class="filters">
-                <div class="filter" data-status="all">Tout</div>
-                <div class="filter" data-status="todo">À faire</div>
-                <div class="filter" data-status="in-progress">En cours</div>
-                <div class="filter" data-status="pending">En attente</div>
-                <div class="filter" data-status="done">Corrigée(s)</div>
-            </div>
-            <div class="clickable-block" data-target="block1">
-                <div class="clickable-content">
-                    <h3> -  Evaluations d’entrainement </h3>
-                    <div class="timeline">
-                        <div class="point" data-number="1"></div>
-                        <div class="point" data-number="2"></div>
-                        <div class="point" data-number="3"></div>
-                    </div>
-                </div>
-                <div class="expandable-menu" id="block1-menu">
-                    <div class="evaluation-links">
-                        <div><a href="rayan-page.html">Evaluation d’entrainement 1 - bloc Pilotage de la paie et des déclarations sociales</a></div>
-                        <div><a href="#">Evaluation d’entrainement 2 - bloc Pilotage de la paie et des déclarations sociales</a></div>
-                        <a href="#">Evaluation d’entrainement 3 - bloc Pilotage de la paie et des déclarations sociales</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 

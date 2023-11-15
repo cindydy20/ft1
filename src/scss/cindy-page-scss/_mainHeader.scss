@@ -15,14 +15,34 @@ h3 {
  }
 .bigBlock {
     display: flex;
+    flex-direction: column;
     background: #E9EAED;
-    padding: 70px 50px 50px 50px;
+    padding: 70px 50px 50px 70px;
 }
 
 .titlePrimary{
-    position: absolute;
-    width: 80%;
+    width: 100%;
     font-size: 30px;
+    margin: 25px 0 25px 50px;
+    padding-left: 155px;
+}
+ 
+.iconModule {
+    position: absolute;
+    padding-left: 125px;
+    margin-top: 15px;
+}
+
+.titleModule{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.blocksContent {
+    display: flex;
 }
 
 .photos-container {
@@ -193,6 +213,7 @@ h3 {
     margin-bottom: 5px;
     color: #333;
     background-color: white;
+    margin: 10px;
 }
 
 .filters {
