@@ -9,12 +9,14 @@
     flex-shrink: 0;
     border-radius: 5px;
     background: #FFF;
+    font-family: Campton;
   }
   .accueil {
     position: absolute;
     left: 145px;
     line-height: 110%;
     color: #337ab7;
+    font-family: Campton;
   }
   .div {    
     left: 200px;
@@ -24,16 +26,19 @@
   .pilotage-de-la {
     position: absolute;
     line-height: 110%;
+    font-family: Campton;
   }
   .evaluations {
     top: 170px;
     left: 214px;
     font-weight: 300;
+    font-family: Campton;
   }
   .pilotage-de-la {
     top: 229px;
     left: 195px;
     font-weight: 500;
+    font-family: Campton;
   }
   .eval-container-item {
     position: absolute;
@@ -43,6 +48,7 @@
     width: 50px;
     height: 50px;
     object-fit: cover;
+    font-family: Campton;
   }
   .eval-container-inner {
     position: absolute;
@@ -51,28 +57,31 @@
     width: 3px;
     height: 38px;
     overflow: hidden;
+    font-family: Campton;
   }
   .consulter-la-notice,
   .notice {
     position: absolute;
     line-height: 110%;
     font-weight: 500;
+    font-family: Campton;
   }
   .notice {
     top: 23px;
     left: calc(50% - 48px);
+    font-family: Campton;
   }
   .consulter-la-notice {
     top: 0px; 
-    left: 10px;
+    left: 0px;
     display: inline-flex;
-    padding: 6px 42px 6px 41px;
+    padding: 6px 42px 6px 35px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background: #31486A;
     color: var(--color-white, #FFF);
-    font-family: CamptonMedium;
+    font-family: Campton;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -86,6 +95,7 @@
     width: 219px;
     height: 30px;
     overflow: hidden;
+    font-family: Campton;
   }
   .frame-child {
     position: absolute;
@@ -97,11 +107,20 @@
   .veuillez-consulter-la {
     position: absolute;
     top: 212px;
-    left: calc(50% - 94px);
+    left: 30px;
     line-height: 110%;
     font-weight: 500;
     display: inline-block;
     width: 188px;
+    font-family: Campton;
+    width: 217px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 15.403px */
+    letter-spacing: -0.49px;
   }
   .notice-parent {
     position: absolute;
@@ -117,11 +136,12 @@
     border-radius: 5px;
     border: 1px solid #31486A;
     background: #FFF;
+    font-family: Campton;
   }
   .soumettre-mon-valuation {
     position: absolute;
     top: 15px;
-    left: 230px;
+    left: 200px;
     line-height: 110%;
     font-weight: 500;
     color: var(--color-white, #FFF);
@@ -144,6 +164,7 @@
     position: absolute;
     line-height: 110.02%;
     font-weight: 500;
+    font-family: Campton;
   }
   .enonc {
     top: 23px;
@@ -164,24 +185,49 @@
     position: absolute;
     top: 190px;
     left: calc(50% - 110px);
-    width: 219px;
+    width: 175px;
     height: 30px;
     overflow: hidden;
+    font-family: Campton;
+    display: inline-flex;
+    height: 17px;
+    padding: 6px 9px 6px 37px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #31486A;
+    background: #FFF;
+    color: #31486A;
+    font-family: Campton;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 17.604px */
+    letter-spacing: -0.56px;
   }
   .copie-rendre {
     position: absolute;
     top: 0px;
-    left: 70px;
+    left: 0px;
     line-height: 110.02%;
     font-weight: 500;
     display: inline-flex;
-    padding: 6px 9px 6px 56px;
+    padding: 6px 80px 6px 34px;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 30px;
     flex-shrink: 0;
     border-radius: 5px;
     background: #31486A;
+    color: var(--color-white, #FFF);
+    font-family: Campton;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 17.604px */
+    letter-spacing: -0.56px;
   }
   .copie-rendre-parent {
     position: absolute;
@@ -190,6 +236,7 @@
     width: 219px;
     height: 30px;
     overflow: hidden;
+    font-family: Campton;
   }
   .doc-search-two-icon {
     position: absolute;
@@ -212,6 +259,7 @@
     border-radius: 5px;
     border: 1px solid #31486A;
     background: #FFF;
+    font-family: Campton;
   }
   .envoyer-lvaluation {
     position: absolute;
@@ -219,6 +267,7 @@
     left: calc(50% - 114px);
     line-height: 110.02%;
     font-weight: 500;
+    font-family: Campton;
   }
   .send-email-icon {
     position: absolute;
@@ -227,12 +276,45 @@
     width: 66px;
     height: 66px;
   }
+   .puis-cliquez-sur{
+    width: 217px;
+    color: #000;
+    text-align: center;
+    font-family: Campton;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 15.403px */
+    letter-spacing: -0.49px;
+    position: absolute;
+    top: 212px;
+    left: calc(50% - 94px);
+    line-height: 110%;
+    font-weight: 500;
+    display: inline-block;
+    width: 188px;
+    font-family: Campton;
+   }
   .transfert-de-fichiers {
     position: absolute;
-    top: 4px;
-    left: 34px;
+    top: 0px;
+    left: 0px;
     line-height: 110.02%;
     font-weight: 500;
+    font-family: Campton;
+    display: inline-flex;
+    padding: 6px 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #31486A;
+    color: var(--color-white, #FFF);
+    font-family: Campton;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.023%; /* 17.604px */
+    letter-spacing: -0.56px;
   }
   .envoyer-lvaluation-parent,
   .transfert-de-fichiers-wrapper {
@@ -257,6 +339,7 @@
     border-radius: 5px;
     border: 1px solid #31486A;
     background: #FFF;
+    font-family: Campton;
   }
   .eval-container {
     position: relative;
@@ -264,5 +347,6 @@
     height: 832px;
     overflow: hidden;
     text-align: left;
+    font-family: Campton;
   }
   
