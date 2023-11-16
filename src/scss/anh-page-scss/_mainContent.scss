@@ -1,0 +1,162 @@
+@use 'commonProperties' as cp;
+
+$iconHoverColorTopMenu: #3c8e9a;
+$menuFontFamily: 'Nunito', sans-serif;
+$fontSizeTopMenu: 0.77775rem;
+$widthLeftMenuWithBorder: 26.8125rem;
+$heightTopMenu: 50px;
+$backgroundColorMain: #E9EAED;
+$primaryColorLeftMenu: #31486A;
+$titleFormationTextColor: #212121;
+$heightFormation: 4.25rem;
+$marginBottomFormation: 1.5rem;
+$marginLeftNumberCompetencesFullScreen: 5rem;
+$marginLeftNumberCompetencesSmallDeviceWidth: 0rem;
+$inputBoxWidthFullScreen: 30rem;
+$smallDeviceWidth: 370px;
+
+body {
+  background-color: $backgroundColorMain;
+}
+
+.main {
+  width: calc(100% - ($widthLeftMenuWithBorder));
+  height: calc(100% - ($heightTopMenu));
+  position: absolute;
+  top: 14%;
+  right: 7%;
+}
+
+div.fil-ariane {
+  @include cp.commonBoxPropertiesMain(2.3125rem, 10px);
+
+  a {
+
+    p {
+      font-family: $menuFontFamily;
+    }
+  }
+}
+
+.eval-barre-recherche {
+  display: flex;
+  position: relative;
+
+  p:first-child {
+    @include cp.textFont(2.5rem, normal, 600, 110.023%);
+    letter-spacing: -0.0875rem;
+  }
+}
+
+.barre-recherche {
+
+  input {
+    @include cp.commonBoxPropertiesMain(2.375rem, 0%);
+    @include cp.textFont(1.125rem, normal, 250, 3.125rem, #000);
+    width: $inputBoxWidthFullScreen;
+    position: absolute;
+    right: 0%;
+    top: 37%;
+    text-align: left;
+    border: 0px;
+  }
+
+  svg {
+    width: 1.8125rem;
+    height: 1.8125rem;
+    position: absolute;
+    top: 42%;
+    right: 0%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .eval-barre-recherche {
+      flex-direction: row;
+    }
+  }
+}
+
+.formation {
+  @include cp.commonBoxPropertiesMain($heightFormation, 0%);
+  align-items: center;
+  margin-bottom: $marginBottomFormation;
+
+  a.title-formation {
+    @include cp.textFont(1.125rem, normal, 500, 110.023%, $titleFormationTextColor, Campton);
+    letter-spacing: -0.03938rem;
+    width: calc((100% - ($widthLeftMenuWithBorder)) / 1.25);
+  }
+
+
+  div.icon-test {
+    display: flex;
+    background-color: $primaryColorLeftMenu;
+    position: relative;
+    align-items: center;
+    height: calc($heightFormation / 3 + 0.5rem);
+    margin-top: calc(($heightFormation / 3) - 1.2rem);
+    margin-right: 2rem;
+    width: 3rem;
+
+    p {
+      @include cp.textFont(1.125rem, normal, 500, 110.023%, #FFF, Campton);
+      letter-spacing: -0.03938rem;
+      position: absolute;
+      left: 14%;
+      bottom: -50%;
+    }
+
+    svg {
+      position: absolute;
+      right: 10%;
+    }
+  }
+
+  .number-competences {
+    margin-left: $marginLeftNumberCompetencesFullScreen;
+    position: relative;
+
+    .count-competence {
+      @include cp.textFont(1.125rem, normal, 500, 110.023%, $primaryColorLeftMenu, Campton);
+      letter-spacing: -0.03938rem;
+      position: absolute;
+      top: -35px;
+      right: -55px;
+    }
+
+    .competences {
+      @include cp.textFont(0.75rem, normal, 300, 110.023%, $primaryColorLeftMenu, Campton);
+      letter-spacing: -0.02625rem;
+      position: absolute;
+      top: 41%;
+    }
+  }
+}
+
+@media screen and (min-width: $smallDeviceWidth) and (max-width: 1280px) {
+  .number-competences {
+    margin-left: $marginLeftNumberCompetencesSmallDeviceWidth !important;
+  }
+
+  a.title-formation {
+    width: calc((100% - ($widthLeftMenuWithBorder)) / 0.8) !important;
+  }
+
+  .eval-barre-recherche {
+    margin-bottom: 15%;
+  }
+
+  .barre-recherche {
+
+    input {
+      right: 14% !important;
+      top: 95% !important;
+    }
+
+    svg {
+      top: 99% !important;
+      right: 15% !important;
+    }
+  }
+
+}

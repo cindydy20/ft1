@@ -13,14 +13,16 @@ $fontSizeTopMenu: 0.77775rem;
   align-items: center;
   top: 0;
   position: fixed;
-  width: 98%;
+  width: 99%;
   margin-left: -10px;
+  background: #FFF;
 
   div#headerIcons {
     display: flex;
     justify-content: flex-end;
     width: 70%;
     position: relative;
+    margin-left: 15%;
 
     div.arbre-top-menu {
       display: flex;
@@ -45,8 +47,8 @@ $fontSizeTopMenu: 0.77775rem;
     }
 
     div.icons-list-top-menu {
-      position: absolute;
-      right: -25%;
+      margin-right: 5%;
+      margin-left: 5%;
 
       img {
         width: 11rem;
@@ -55,14 +57,13 @@ $fontSizeTopMenu: 0.77775rem;
     }
 
     div.avatar-section {
-      right: -33%;
-      position: relative;
 
       > a {
+        position: fixed;
         vertical-align: middle;
         height: 40px;
         border-radius: 50%;
-        top: 5px;
+        right: 1%;
 
         img {
           vertical-align: middle;
@@ -74,35 +75,18 @@ $fontSizeTopMenu: 0.77775rem;
   }
 }
 
-// Hide "Mes competences" + icons list + avatar on top menu for small devices
-@media screen and (max-width: 767px) {
-  #arbreTopMenuIcon {
-    display: none;
-  }
-
-  #arbreTopMenuText {
-    display: none;
-  }
-
-  .icons-list-top-menu {
-    display: none;
-  }
-
-  .avatar-section {
-    display: none;
-  }
-}
-
-.js-hideProfileMenu {
+.profile-menu {
   display: none;
 }
 
-.js-showProfileMenu {
+.profile-menu.show {
   @extend %grayShadow;
-  position: absolute;
+  display: block;
+  position: fixed;
   width: 230px;
-  top: 118%;
-  right: -122%;
+  top: 50px;
+  right: 0%;
+  background-color: white;
 
   ul {
     display: flex;

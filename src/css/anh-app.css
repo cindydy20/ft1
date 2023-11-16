@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html li {
   list-style: none;
@@ -8,15 +9,17 @@ html a {
   text-decoration: none;
 }
 
-.container, .profile-menu.show {
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1411764706), 0 1px 18px rgba(0, 0, 0, 0.1215686275);
+.container, .js-showProfileMenu {
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1411764706), 0 1px 18px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1411764706), 0 1px 18px rgba(0, 0, 0, 0.1215686275);
 }
 
-.container div#headerIcons div.arbre-top-menu a, .profile-menu.show ul li a {
+.container div#headerIcons div.arbre-top-menu a, .js-showProfileMenu ul li a {
   color: #212121;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.container div#headerIcons div.arbre-top-menu a:hover, .profile-menu.show ul li a:hover {
+.container div#headerIcons div.arbre-top-menu a:hover, .js-showProfileMenu ul li a:hover {
   color: #3c8e9a;
 }
 
@@ -29,11 +32,16 @@ html a {
 }
 
 .container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 16px;
   z-index: 100;
   height: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   position: fixed;
   width: 99%;
@@ -41,16 +49,23 @@ html a {
   background: #FFF;
 }
 .container div#headerIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 70%;
   position: relative;
-  margin-left: 15%;
 }
 .container div#headerIcons div.arbre-top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .container div#headerIcons div.arbre-top-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.77775rem;
   font-weight: 400;
@@ -65,19 +80,22 @@ html a {
   margin-left: -25px;
 }
 .container div#headerIcons div.icons-list-top-menu {
-  margin-right: 5%;
-  margin-left: 5%;
+  position: absolute;
+  right: -22%;
 }
 .container div#headerIcons div.icons-list-top-menu img {
   width: 11rem;
   height: 2.53844rem;
 }
+.container div#headerIcons div.avatar-section {
+  right: -30%;
+  position: relative;
+}
 .container div#headerIcons div.avatar-section > a {
-  position: fixed;
   vertical-align: middle;
   height: 40px;
   border-radius: 50%;
-  right: 1%;
+  top: 5px;
 }
 .container div#headerIcons div.avatar-section > a img {
   vertical-align: middle;
@@ -85,54 +103,70 @@ html a {
   border-radius: 50%;
 }
 
-.profile-menu {
+.js-hideProfileMenu {
   display: none;
 }
 
-.profile-menu.show {
-  display: block;
-  position: fixed;
+.js-showProfileMenu {
+  position: absolute;
   width: 230px;
-  top: 50px;
-  right: 0%;
+  top: 110%;
+  right: -55%;
   background-color: white;
 }
-.profile-menu.show ul {
+.js-showProfileMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   padding: 0;
 }
-.profile-menu.show ul li {
+.js-showProfileMenu ul li {
   border: 1px solid #bdc3c7;
   padding: 1px;
 }
-.profile-menu.show ul li a {
+.js-showProfileMenu ul li a {
   font-family: "Nunito", sans-serif;
   font-size: 0.77775rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
 }
-.profile-menu.show ul li a span {
+.js-showProfileMenu ul li a span {
   margin: 10px 18px 5px;
 }
 
 .left-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 16.8125rem;
   height: calc(100% - 50px);
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: fixed;
   background: #31486A;
   left: 0;
   top: 50px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(-78%);
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: translateX(-78%);
+          transform: translateX(-78%);
 }
 
 .left-menu.open {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .toggle-button {
@@ -156,6 +190,8 @@ html a {
   width: 16.8125rem;
 }
 .list-left-menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: var(--color-white, #FFF);
   font-family: "Nunito", sans-serif;
@@ -201,6 +237,8 @@ body {
 div.fil-ariane {
   background-color: #FFF;
   border-radius: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 15px;
   height: 2.3125rem;
@@ -211,6 +249,8 @@ div.fil-ariane a p {
 }
 
 .eval-barre-recherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -227,6 +267,8 @@ div.fil-ariane a p {
 .barre-recherche input {
   background-color: #FFF;
   border-radius: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 15px;
   height: 2.375rem;
@@ -253,18 +295,25 @@ div.fil-ariane a p {
 }
 @media screen and (max-width: 767px) {
   .barre-recherche .eval-barre-recherche {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .formation {
   background-color: #FFF;
   border-radius: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 15px;
   height: 4.25rem;
   padding-bottom: 0%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.5rem;
 }
 .formation a.title-formation {
@@ -278,10 +327,14 @@ div.fil-ariane a p {
   width: calc((100% - 26.8125rem) / 1.25);
 }
 .formation div.icon-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #31486A;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 1.9166666667rem;
   margin-top: 0.2166666667rem;
   margin-right: 2rem;
@@ -350,5 +403,3 @@ div.fil-ariane a p {
     right: 15% !important;
   }
 }
-
-/*# sourceMappingURL=anh-page-main.css.map */
