@@ -6,7 +6,6 @@ $fontSizeTopMenu: 0.77775rem;
 
 .container {
   @extend %grayShadow;
-  background-color: white;
   display: flex;
   padding: 0 16px;
   z-index: 100;
