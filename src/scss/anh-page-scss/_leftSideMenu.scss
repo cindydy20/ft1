@@ -1,0 +1,90 @@
+@use 'commonProperties';
+
+$menuFontFamily: 'Nunito', sans-serif;
+$widthLeftMenu: 16.8125rem;
+$fontSizeLeftMenu: 0.875rem;
+$primaryColorLeftMenu: #31486A;
+$textColorLeftMenu: var(--color-white, #FFF);
+$onHoverColorLeftMenu: #FFB527;
+
+.left-menu {
+  display: flex;
+  justify-content: space-between;
+  width: $widthLeftMenu;
+  height: calc(100% - (50px));
+  flex-shrink: 0;
+  position: fixed;
+  background: #31486A;
+  left: 0;
+  top: 50px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-78%);
+}
+
+.left-menu.open {
+  transform: translateX(0);
+}
+
+.toggle-button {
+  background-color: $primaryColorLeftMenu;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 68px;
+  left: 92%;
+}
+
+.list-left-menu {
+  ul {
+    position: relative;
+    top: 115px;
+    right: 10px;
+    width: 16.8125rem;
+  }
+
+  li {
+
+    a {
+      display: flex;
+      color: $textColorLeftMenu;
+      font-family: $menuFontFamily;
+      font-size: $fontSizeLeftMenu;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110.023%;
+      letter-spacing: -0.03063rem;
+      width: $widthLeftMenu;
+      position: relative;
+      right: 30px;
+      height: 50px;
+      margin-bottom: 15px;
+
+      &:hover {
+        background-color: $onHoverColorLeftMenu;
+        color: $primaryColorLeftMenu;
+      }
+
+      svg:first-child {
+        margin: 8px 17px 30px 30px;
+      }
+
+      p {
+        position: relative;
+      }
+
+      svg:nth-last-of-type(1) {
+        position: absolute;
+        right: 7%;
+        top: 15%;
+      }
+    }
+  }
+}
+
+
+

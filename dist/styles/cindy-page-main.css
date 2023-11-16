@@ -1,0 +1,278 @@
+body {
+  font-family: "Campton", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 15px 0 15px 15px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+h2 h3 {
+  font-size: 14px;
+}
+
+.bigBlock {
+  display: flex;
+  flex-direction: column;
+  background: #E9EAED;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 4.5%;
+  overflow-x: clip;
+}
+
+.titlePrimary {
+  width: 100%;
+  font-size: 30px;
+  margin: 25px 0 25px 50px;
+  padding-left: 155px;
+}
+
+.iconModule {
+  position: absolute;
+  padding-left: 125px;
+  margin-top: 15px;
+}
+
+.titleModule {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.blocksContent {
+  display: flex;
+}
+
+.photos-container {
+  width: 260px;
+  margin-right: 29px;
+  margin-left: 80px;
+}
+.photos-container .photo {
+  height: 271px;
+  background-color: #ffffff;
+  margin-bottom: 29px;
+  border-radius: 5px;
+}
+
+.blocks-container {
+  flex: 1;
+  padding: 13.28px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+.clickable-block {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.clickable-content {
+  background-color: #ffffff;
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.expandable-menu {
+  display: none;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+.timeline .point {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #cecece;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.timeline .point::before {
+  content: attr(data-number);
+}
+
+.evaluation-links a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: white;
+}
+
+.ressOne, .ressTwo, .ressThree {
+  padding: 10px 0px 10px 15px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.links {
+  margin: 4px 0 0 0;
+}
+
+.photos-container .photo {
+  margin-bottom: 29px;
+}
+
+.arbre {
+  width: 231px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.arbre, .photos-container .photo button {
+  margin: 15px 0px 0px 5px;
+  padding: 9px;
+  display: block;
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.photos-container .photo button {
+  background-color: #E9EAED;
+  border-radius: 5px;
+  margin-left: 74px;
+}
+
+.blocks-container .clickable-block {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.blocks-container .clickable-content h3 {
+  margin: 0;
+  background-color: white;
+}
+
+.blocks-container .expandable-menu {
+  display: none;
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.blocks-container .timeline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+  padding-top: 10px;
+}
+
+.blocks-container .point {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #cecece;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+.blocks-container .point::before {
+  content: attr(data-number);
+}
+
+.blocks-container .evaluation-links a {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  background-color: white;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  border-bottom: #ffffff 2px solid;
+}
+
+.filter {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
+  color: black;
+}
+
+.filter.active {
+  font-weight: bold;
+  border-bottom: 3px solid;
+  color: inherit;
+}
+
+.filter[data-status=all].active {
+  color: black;
+}
+
+.filter[data-status=todo].active {
+  color: #FFA31B;
+}
+
+.filter[data-status=in-progress].active {
+  color: #E56262;
+}
+
+.filter[data-status=pending].active {
+  color: #50C9C3;
+}
+
+.filter[data-status=done].active {
+  color: #8BC34A;
+}
+
+.filter[data-status=all] {
+  color: black;
+}
+
+.filter[data-status=todo] {
+  color: black;
+}
+
+.filter[data-status=in-progress] {
+  color: black;
+}
+
+.filter[data-status=pending] {
+  color: black;
+}
+
+.filter[data-status=done] {
+  color: black;
+}
+
+.content {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=cindy-page-main.css.map */
