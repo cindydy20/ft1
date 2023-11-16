@@ -1,7 +1,14 @@
 /*# sourceMappingURL=rayan-page-main.css.map */
+.main-rayan {
+    width: calc(100% - 7.8125rem);
+    height: calc(100% - 50px);
+    position: absolute;
+    top: 14%;
+    right: 7%;
+}
 
-  .accueil,
-  .div {
+.accueil,
+.div {
     top: 170px;
     font-weight: 300;
     width: 1068px;
@@ -10,37 +17,43 @@
     border-radius: 5px;
     background: #FFF;
     font-family: Campton;
-  }
-  .accueil {
+}
+
+.accueil {
     position: absolute;
     left: 145px;
     line-height: 110%;
     color: #337ab7;
     font-family: Campton;
-  }
-  .div {    
+}
+
+.div {
     left: 200px;
-  }
-  .div,
-  .evaluations,
-  .pilotage-de-la {
+}
+
+.div,
+.evaluations,
+.pilotage-de-la {
     position: absolute;
     line-height: 110%;
     font-family: Campton;
-  }
-  .evaluations {
+}
+
+.evaluations {
     top: 170px;
     left: 214px;
     font-weight: 300;
     font-family: Campton;
-  }
-  .pilotage-de-la {
+}
+
+.pilotage-de-la {
     top: 229px;
     left: 195px;
     font-weight: 500;
     font-family: Campton;
-  }
-  .eval-container-item {
+}
+
+.eval-container-item {
     position: absolute;
     top: 215px;
     left: 131px;
@@ -49,8 +62,9 @@
     height: 50px;
     object-fit: cover;
     font-family: Campton;
-  }
-  .eval-container-inner {
+}
+
+.eval-container-inner {
     position: absolute;
     top: 429px;
     left: 0;
@@ -58,21 +72,24 @@
     height: 38px;
     overflow: hidden;
     font-family: Campton;
-  }
-  .consulter-la-notice,
-  .notice {
+}
+
+.consulter-la-notice,
+.notice {
     position: absolute;
     line-height: 110%;
     font-weight: 500;
     font-family: Campton;
-  }
-  .notice {
+}
+
+.notice {
     top: 23px;
     left: calc(50% - 48px);
     font-family: Campton;
-  }
-  .consulter-la-notice {
-    top: 0px; 
+}
+
+.consulter-la-notice {
+    top: 0px;
     left: 0px;
     display: inline-flex;
     padding: 6px 42px 6px 35px;
@@ -87,8 +104,9 @@
     font-weight: 500;
     line-height: 110.023%; /* 17.604px */
     letter-spacing: -0.56px;
-  }
-  .consulter-la-notice-wrapper {
+}
+
+.consulter-la-notice-wrapper {
     position: absolute;
     top: 160px;
     left: 30px;
@@ -96,15 +114,17 @@
     height: 30px;
     overflow: hidden;
     font-family: Campton;
-  }
-  .frame-child {
+}
+
+.frame-child {
     position: absolute;
     top: 71px;
     left: 99px;
     width: 76px;
     height: 76px;
-  }
-  .veuillez-consulter-la {
+}
+
+.veuillez-consulter-la {
     position: absolute;
     top: 212px;
     left: 30px;
@@ -121,11 +141,12 @@
     font-weight: 500;
     line-height: 110.023%; /* 15.403px */
     letter-spacing: -0.49px;
-  }
-  .notice-parent {
+}
+
+.notice-parent {
     position: absolute;
     top: 315px;
-    left: 320px;
+    left: 150px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
@@ -137,8 +158,9 @@
     border: 1px solid #31486A;
     background: #FFF;
     font-family: Campton;
-  }
-  .soumettre-mon-valuation {
+}
+
+.soumettre-mon-valuation {
     position: absolute;
     top: 15px;
     left: 200px;
@@ -147,41 +169,47 @@
     color: var(--color-white, #FFF);
     font-family: Campton;
     font-size: 30px;
-    font-style: normal; 
-  }
-  .soumettre-mon-valuation-wrapper {
+    font-style: normal;
+}
+
+.soumettre-mon-valuation-wrapper {
     position: absolute;
     top: 750px;
-    left: 590px;
+    left: 333px;
     border-radius: 5px;
     background-color: #ffb527;
     width: 765px;
     height: 67px;
     overflow: hidden;
-  }
-  .enonc,
-  .tlcharger-lnonc {
+}
+
+.enonc,
+.tlcharger-lnonc {
     position: absolute;
     line-height: 110.02%;
     font-weight: 500;
     font-family: Campton;
-  }
-  .enonc {
+}
+
+.enonc {
     top: 23px;
     left: calc(50% - 52px);
-  }
-  .tlcharger-lnonc {
+}
+
+.tlcharger-lnonc {
     top: 4px;
     left: calc(50% - 79.5px);
-  }
-  .download-icon {
+}
+
+.download-icon {
     position: absolute;
     top: 6px;
     left: 192px;
     width: 18px;
     height: 18px;
-  }
-  .tlcharger-lnonc-parent {
+}
+
+.tlcharger-lnonc-parent {
     position: absolute;
     top: 190px;
     left: calc(50% - 110px);
@@ -206,8 +234,9 @@
     font-weight: 500;
     line-height: 110.023%;
     letter-spacing: -0.56px;
-  }
-  .copie-rendre {
+}
+
+.copie-rendre {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -228,8 +257,9 @@
     font-weight: 500;
     line-height: 110.023%;
     letter-spacing: -0.56px;
-  }
-  .copie-rendre-parent {
+}
+
+.copie-rendre-parent {
     position: absolute;
     top: 227px;
     left: calc(50% - 110px);
@@ -237,18 +267,20 @@
     height: 30px;
     overflow: hidden;
     font-family: Campton;
-  }
-  .doc-search-two-icon {
+}
+
+.doc-search-two-icon {
     position: absolute;
     top: 69px;
     left: calc(50% - 38px);
     width: 78px;
     height: 78px;
-  }
-  .enonc-parent {
+}
+
+.enonc-parent {
     position: absolute;
     top: 315px;
-    left: 810px;
+    left: 550px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
@@ -260,23 +292,26 @@
     border: 1px solid #31486A;
     background: #FFF;
     font-family: Campton;
-  }
-  .envoyer-lvaluation {
+}
+
+.envoyer-lvaluation {
     position: absolute;
     top: 23px;
     left: calc(50% - 114px);
     line-height: 110.02%;
     font-weight: 500;
     font-family: Campton;
-  }
-  .send-email-icon {
+}
+
+.send-email-icon {
     position: absolute;
     top: 70px;
     left: 109px;
     width: 66px;
     height: 66px;
-  }
-   .puis-cliquez-sur{
+}
+
+.puis-cliquez-sur {
     width: 217px;
     color: #000;
     text-align: center;
@@ -294,8 +329,9 @@
     display: inline-block;
     width: 188px;
     font-family: Campton;
-   }
-  .transfert-de-fichiers {
+}
+
+.transfert-de-fichiers {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -315,21 +351,24 @@
     font-weight: 500;
     line-height: 110.023%; /* 17.604px */
     letter-spacing: -0.56px;
-  }
-  .envoyer-lvaluation-parent,
-  .transfert-de-fichiers-wrapper {
+}
+
+.envoyer-lvaluation-parent,
+.transfert-de-fichiers-wrapper {
     position: absolute;
     overflow: hidden;
-  }
-  .transfert-de-fichiers-wrapper {
+}
+
+.transfert-de-fichiers-wrapper {
     top: 156px;
     left: calc(50% - 109px);
     width: 219px;
     height: 30px;
-  }
-  .envoyer-lvaluation-parent {
+}
+
+.envoyer-lvaluation-parent {
     top: 315px;
-    left: 1300px;
+    left: 945px;
     box-sizing: border-box;
     width: 276px;
     height: 293px;
@@ -340,13 +379,14 @@
     border: 1px solid #31486A;
     background: #FFF;
     font-family: Campton;
-  }
-  .eval-container {
+}
+
+.eval-container {
     position: relative;
     width: 100%;
     height: 832px;
     overflow: hidden;
     text-align: left;
     font-family: Campton;
-  }
+}
   
