@@ -15,19 +15,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const filters = document.querySelectorAll(".filter");
 
     filters.forEach(filter => {
         filter.addEventListener("click", function() {
-            // Réinitialise l'état actif
             filters.forEach(f => {
                 f.classList.remove("active");
                 f.style.borderBottomColor = "transparent";
             });
 
-            // Active le filtre actuel
             filter.classList.add("active");
             filter.style.borderBottomColor = filter.style.color;
         });
