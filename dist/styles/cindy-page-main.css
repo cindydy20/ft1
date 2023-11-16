@@ -14,13 +14,8 @@ h2 h3 {
 }
 
 .bigBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: #E9EAED;
   width: 90%;
   margin-top: 5%;
@@ -42,22 +37,14 @@ h2 h3 {
 }
 
 .titleModule {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-bottom: 45px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .blocksContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -74,12 +61,9 @@ h2 h3 {
 }
 
 .blocks-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 13.28px 20px 20px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clickable-block {
@@ -104,14 +88,9 @@ h2 h3 {
 }
 
 .timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   margin: 10px 0 10px 0;
 }
 .timeline .point {
@@ -120,15 +99,9 @@ h2 h3 {
   height: 20px;
   background-color: #cecece;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-weight: bold;
 }
@@ -176,12 +149,8 @@ h2 h3 {
   color: #000;
   cursor: pointer;
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .photos-container .photo button {
@@ -208,14 +177,9 @@ h2 h3 {
 }
 
 .blocks-container .timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 10px;
   background-color: white;
   padding-top: 10px;
@@ -227,15 +191,9 @@ h2 h3 {
   height: 20px;
   background-color: #cecece;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: rgb(0, 0, 0);
   font-weight: 300;
 }
@@ -254,8 +212,6 @@ h2 h3 {
 }
 
 .filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   border-bottom: #ffffff 2px solid;
@@ -265,7 +221,6 @@ h2 h3 {
   padding: 10px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
-  -webkit-transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
   transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
   color: black;
 }
@@ -319,3 +274,5 @@ h2 h3 {
 .content {
   padding: 20px;
 }
+
+/*# sourceMappingURL=cindy-page-main.css.map */
