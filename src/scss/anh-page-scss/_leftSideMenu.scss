@@ -6,6 +6,9 @@ $fontSizeLeftMenu: 0.875rem;
 $primaryColorLeftMenu: #31486A;
 $textColorLeftMenu: var(--color-white, #FFF);
 $onHoverColorLeftMenu: #FFB527;
+$iconHoverColorTopMenu: #3c8e9a;
+$smallDeviceWidth: 370px;
+$largeDeviceWidth: 1280px;
 
 .left-menu {
   display: flex;
@@ -45,46 +48,57 @@ $onHoverColorLeftMenu: #FFB527;
     top: 115px;
     right: 10px;
     width: 16.8125rem;
-  }
 
-  li {
-
-    a {
-      display: flex;
-      color: $textColorLeftMenu;
-      font-family: $menuFontFamily;
-      font-size: $fontSizeLeftMenu;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110.023%;
-      letter-spacing: -0.03063rem;
-      width: $widthLeftMenu;
-      position: relative;
-      right: 30px;
-      height: 50px;
-      margin-bottom: 15px;
-
-      &:hover {
+    li:nth-of-type(4) {
+      a {
         background-color: $onHoverColorLeftMenu;
         color: $primaryColorLeftMenu;
       }
+    }
 
-      svg:first-child {
-        margin: 8px 17px 30px 30px;
-      }
+    li {
 
-      p {
+      a {
+        display: flex;
+        color: $textColorLeftMenu;
+        font-family: $menuFontFamily;
+        font-size: $fontSizeLeftMenu;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110.023%;
+        letter-spacing: -0.03063rem;
+        width: $widthLeftMenu;
         position: relative;
-      }
+        right: 30px;
+        height: 50px;
+        margin-bottom: 15px;
 
-      svg:nth-last-of-type(1) {
-        position: absolute;
-        right: 7%;
-        top: 15%;
+        &:hover {
+          background-color: lightslategray;
+        }
+
+        svg:first-child {
+          margin: 8px 17px 30px 30px;
+        }
+
+        p {
+          position: relative;
+        }
+
+        svg:nth-last-of-type(1) {
+          position: absolute;
+          right: 7%;
+          top: 15%;
+        }
       }
     }
   }
 }
 
+@media screen and (min-width: $smallDeviceWidth) and (max-width: $largeDeviceWidth) {
+  .toggle-button {
+    visibility: hidden;
+  }
+}
 
 

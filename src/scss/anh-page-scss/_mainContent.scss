@@ -10,21 +10,23 @@ $primaryColorLeftMenu: #31486A;
 $titleFormationTextColor: #212121;
 $heightFormation: 4.25rem;
 $marginBottomFormation: 1.5rem;
-$marginLeftNumberCompetencesFullScreen: 5rem;
+$marginLeftNumberCompetencesFullScreen: 3rem;
 $marginLeftNumberCompetencesSmallDeviceWidth: 0rem;
 $inputBoxWidthFullScreen: 30rem;
 $smallDeviceWidth: 370px;
+$largeDeviceWidth: 1280px;
 
 body {
   background-color: $backgroundColorMain;
 }
 
 .main {
-  width: calc(100% - ($widthLeftMenuWithBorder));
+  width: calc(100% - ($widthLeftMenuWithBorder - 6rem));
   height: calc(100% - ($heightTopMenu));
   position: absolute;
   top: 14%;
   right: 7%;
+  transition: width 0.3s ease-in-out;
 }
 
 div.fil-ariane {
@@ -115,6 +117,7 @@ div.fil-ariane {
   .number-competences {
     margin-left: $marginLeftNumberCompetencesFullScreen;
     position: relative;
+    right: -7%;
 
     .count-competence {
       @include cp.textFont(1.125rem, normal, 500, 110.023%, $primaryColorLeftMenu, Campton);
@@ -133,7 +136,7 @@ div.fil-ariane {
   }
 }
 
-@media screen and (min-width: $smallDeviceWidth) and (max-width: 1280px) {
+@media screen and (min-width: $smallDeviceWidth) and (max-width: $largeDeviceWidth) {
   .number-competences {
     margin-left: $marginLeftNumberCompetencesSmallDeviceWidth !important;
   }
