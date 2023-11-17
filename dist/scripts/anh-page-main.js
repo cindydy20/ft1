@@ -1,24 +1,29 @@
 
 // Top menu: click avatar -> show & hide profile menu on right side
-let avatar = document.querySelector('.avatar');
-let profileMenu = document.querySelector('#profileMenu')
+avatar = document.querySelector('.avatar');
+profileMenu = document.querySelector('#profileMenu')
 avatar.addEventListener('click', function () {
     profileMenu.classList.toggle('show')
 })
 
 // Left menu: click toggle button -> open/hide left menu && show only icons (not text) on the partially displayed menu bar
-const toggleButton = document.getElementById('toggleButton');
-const leftMenu = document.getElementById('leftMenu');
-const outterIconsLeftMenu = document.getElementsByClassName("outer-icon");
+toggleButton = document.getElementById('toggleButton');
+leftMenu = document.getElementById('leftMenu');
+outterIconsLeftMenu = document.getElementsByClassName("outer-icon");
 toggleButton.addEventListener('click', () => {
     leftMenu.classList.toggle('open');
-    if (toggleButton.innerHTML = leftMenu.classList.contains('open')) {
+    condition = toggleButton.innerHTML = leftMenu.classList.contains('open');
+
+    if (condition) {
         toggleButton.innerHTML = '&#8249;';
         changeVisibilityOuterIconsLeftMenu(true, outterIconsLeftMenu);
     } else {
         toggleButton.innerHTML = '&#8250;';
         changeVisibilityOuterIconsLeftMenu(false, outterIconsLeftMenu);
     }
+
+    changeWithLeftMenuOnClickButton(condition);
+
 });
 
 function changeVisibilityOuterIconsLeftMenu(condition, selectedIcons) {
@@ -33,5 +38,9 @@ function changeVisibilityOuterIconsLeftMenu(condition, selectedIcons) {
             selectedIcons[i].classList.add("visible");
         }
     }
+}
 
+function changeWithLeftMenuOnClickButton(condition)  {
+    const mainContent = document.querySelector('.main');
+    mainContent.style.width = condition ? "calc(100% - 34.8125rem)" : "calc(100% - 20.8125rem)";
 }

@@ -155,7 +155,11 @@ html a {
   right: 10px;
   width: 16.8125rem;
 }
-.list-left-menu li a {
+.list-left-menu ul li:nth-of-type(4) a {
+  background-color: #FFB527;
+  color: #31486A;
+}
+.list-left-menu ul li a {
   display: flex;
   color: var(--color-white, #FFF);
   font-family: "Nunito", sans-serif;
@@ -170,32 +174,37 @@ html a {
   height: 50px;
   margin-bottom: 15px;
 }
-.list-left-menu li a:hover {
-  background-color: #FFB527;
-  color: #31486A;
+.list-left-menu ul li a:hover {
+  background-color: lightslategray;
 }
-.list-left-menu li a svg:first-child {
+.list-left-menu ul li a svg:first-child {
   margin: 8px 17px 30px 30px;
 }
-.list-left-menu li a p {
+.list-left-menu ul li a p {
   position: relative;
 }
-.list-left-menu li a svg:nth-last-of-type(1) {
+.list-left-menu ul li a svg:nth-last-of-type(1) {
   position: absolute;
   right: 7%;
   top: 15%;
 }
 
+@media screen and (min-width: 370px) and (max-width: 1280px) {
+  .toggle-button {
+    visibility: hidden;
+  }
+}
 body {
   background-color: #E9EAED;
 }
 
 .main {
-  width: calc(100% - 26.8125rem);
+  width: calc(100% - 20.8125rem);
   height: calc(100% - 50px);
   position: absolute;
   top: 14%;
   right: 7%;
+  transition: width 0.3s ease-in-out;
 }
 
 div.fil-ariane {
@@ -304,8 +313,9 @@ div.fil-ariane a p {
   right: 10%;
 }
 .formation .number-competences {
-  margin-left: 5rem;
+  margin-left: 3rem;
   position: relative;
+  right: -7%;
 }
 .formation .number-competences .count-competence {
   font-size: 1.125rem;
