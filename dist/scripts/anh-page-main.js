@@ -22,7 +22,7 @@ toggleButton.addEventListener('click', () => {
         changeVisibilityOuterIconsLeftMenu(false, outterIconsLeftMenu);
     }
 
-    changeWithLeftMenuOnClickButton(condition);
+    changeWidthLeftMenuOnClickButton(condition);
 
 });
 
@@ -40,7 +40,7 @@ function changeVisibilityOuterIconsLeftMenu(condition, selectedIcons) {
     }
 }
 
-function changeWithLeftMenuOnClickButton(condition)  {
+function changeWidthLeftMenuOnClickButton(condition)  {
     const mainContent = document.querySelector('.main');
     mainContent.style.width = condition ? "calc(100% - 34.8125rem)" : "calc(100% - 20.8125rem)";
 }
